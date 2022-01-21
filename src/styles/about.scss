@@ -32,9 +32,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around; 
+            font-family: 'Comforter Brush', cursive;
             .aboutNavMenuUnit{
                 width: 100%;
                 position: relative;
+                font-size: 1.5rem;
                 cursor: pointer;
                 .aboutNavMenuUnitContent{
                     position: absolute;
@@ -47,7 +49,7 @@
                 // menu hover的效果用after寫會不會比較好?
                 .aboutNavMenuUnitContent:hover+.aboutNavMenuUnitHover{
                     width: 70%;
-                    height: 10px;
+                    height: 15px;
                     border-radius: 20px;
                     background-color: #F3E198;
                     position: absolute;
