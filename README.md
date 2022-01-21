@@ -5,13 +5,14 @@
 # 頁面展示
 
 ### 首頁
-![image](https://github.com/richard85501/mountaineering_record/blob/main/messageImage_1642758039701.jpg)
+![image](https://github.com/richard85501/mountaineering_record/blob/main/readme_2.jpg)
 ### 裝備清單頁
-![image](https://github.com/richard85501/mountaineering_record/blob/main/messageImage_1642758112885.jpg)
+![image](https://github.com/richard85501/mountaineering_record/blob/main/readme_1.jpg)
 
 
 # 初次啟動程式
 1.npm i 
+
 2.npm start
 
 
