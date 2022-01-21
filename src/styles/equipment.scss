@@ -1,0 +1,129 @@
+.equipmentContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.equipmentTitle{
+    height: 10%;
+    padding: 20px 0 0 30px;
+    font-size: 3rem;
+}
+
+.equipmentContentContainer{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    flex-direction: row;
+}
+
+.equipmentContainer_Left{
+    width: 50%;
+    height: 100%;
+    overflow-x:hidden;
+    position: relative;
+    .scroll-box{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left:20px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        .formDataContainer{
+            margin: 30px 0 0 0;
+            .equipmentSubtitle{
+                font-size: 2rem;
+            }
+            .formDataItemContainer{
+                width: 100%;
+                height: 40px;
+                margin: 20px 0 0 0;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .formDataItem_name{
+                    margin-left:2% ;
+                    width: 18%;
+                }
+                .formDataItem_remark{
+                    width: 40%;
+                }
+                .formDataItem_count{
+                    width: 20%;
+                }
+                .formDataItem_weight{
+                    width: 20%;
+                }
+            }
+            .formDataItemContentContainer{
+                width: 100%;
+                margin: 5px 0 0 0;
+                padding: 0 0 10px 0;
+                font-size: 0.8rem;
+                border-bottom: 1px solid black;
+                .formDataItemContent_row{
+                    width: 100%;
+                    margin: 5px 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    .formDataItemContent_name{
+                        margin-left:2% ;
+                        width: 18%;
+                    }
+                    .formDataItemContent_remark{
+                        width: 40%;
+                    }
+                    .formDataItemContent_count{
+                        width: 20%;
+                    }
+                    .formDataItemContent_weight{
+                        width: 20%;
+                    }
+                }
+            }
+            .partOfEquipmentTotal{
+                padding: 10px 0 ;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                text-align: center;
+                .partOfEquipmentTotal_number{
+                    width: 20%;
+                }
+                .partOfEquipmentTotal_weight{
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+
+.equipmentContainer_Right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    .piechartContainer{
+        // background-color: #ccc;
+        margin:20px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 500px;
+        height: 60%;
+        position: relative;
+    }
+    .totalOfEquipmentWeight{
+        font-size: 2rem;
+        font-family: 'Caveat', cursive;
+    }
+
+}

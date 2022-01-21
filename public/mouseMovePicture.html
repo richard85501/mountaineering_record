@@ -1,0 +1,72 @@
+// import logo from './logo.svg';
+import './App.css';
+import React , { useState,useCallback} from 'react';
+import './styles/indexCss.scss';
+import ReactDOM from 'react-dom';
+import { 
+  BrowserRouter,
+  Route ,
+  Routes,
+  Link
+} from 'react-router-dom';
+import { createBrowserHistory } from 'history'
+
+import Home from './pages/Home'
+import About from './pages/About';
+
+import Landscape from './pages/Landscape';
+import Altitude from './pages/Altitude';
+import Equipment from './pages/Equipment';
+import Itinerary from './pages/Itinerary ';
+import Ingredients from './pages/Ingredients';
+
+import { FiAlignRight } from "react-icons/fi";
+
+const mouseWidth = 1080;
+const mouseHeight = 500;
+const circleRadius = 30;
+const initialmousePosition = {x: mouseWidth/2,y:mouseHeight/2}
+
+function App(){
+  const [mousePosition,setMousePosition]=useState(initialmousePosition)
+
+    const handleMouseMove = useCallback(
+      (event) => {
+        const {clientX,clinetY} = event;
+        setMousePosition({x:clientX,y:clinetY});
+      },[setMousePosition],
+    )
+
+  return(
+  <BrowserRouter>
+  <div className='indexContainer'>
+    <div className="headerLine">
+        <div className='websiteTitle'>
+          <Link to="/" className='websiteTitleWord'>mountaineering journal</Link>
+        </div>
+        <div className='hambergerMenu'>
+          <FiAlignRight/>
+        </div>
+    </div>
+    <Routes>
+        <Route path="/about/" element={<About />} />
+        <Route path="/landscape/" element={<Landscape />} />
+        <Route path="/Altitude/" element={<Altitude />} />
+        <Route path="/Equipment/" element={<Equipment />} />
+        <Route path="/Itinerary/" element={<Itinerary  />} />
+        <Route path="/Ingredients/" element={<Ingredients  />} />
+        <Route path="/" element={<Home />} />
+    </Routes>
+  </div>
+  <svg width={mouseWidth} height={mouseHeight} onMouseMove={handleMouseMove}>
+  <circle
+    cx={mousePosition.x}
+    cy={mousePosition.y}
+    r={circleRadius}
+  />
+  </svg>
+  </BrowserRouter>
+  )
+}
+
+export default App;

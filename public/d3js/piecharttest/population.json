@@ -1,0 +1,22 @@
+[
+    {
+        "item":"大背包",
+        "number":1,
+        "weight":950
+    },
+    {
+        "item":"睡袋",
+        "number":1,
+        "weight":700
+    },
+    {
+        "item":"睡墊",
+        "number":1,
+        "weight":200
+    },
+    {
+        "item":"登山杖",
+        "number":2,
+        "weight":150
+    }
+]
