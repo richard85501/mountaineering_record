@@ -1,8 +1,7 @@
+首頁
 ![image](https://github.com/richard85501/mountaineering_record/blob/main/messageImage_1642758039701.jpg)
-
-
-
-
+裝備清單頁
+![image](https://github.com/richard85501/mountaineering_record/blob/main/messageImage_1642758112885.jpg)
 
 
 
