@@ -11,7 +11,7 @@ import sumida from '../images/sumida.jpg';
 
 import JournalUnit from '../components/JournalUnit';
 
-const indexTitle = ["雪山","羅馬縱走","大小霸","能高安東軍"]
+const indexTitle = ["聖稜線","羅馬縱走","大小霸","能高安東軍"]
 const upperPicture = [cloud,big_water,snow,white_mountain]
 const middlePicture = [chicken,cry,snow_north_peak,sumida]
 
