@@ -10,7 +10,7 @@
 ![image](https://github.com/richard85501/mountaineering_record/blob/main/readme_1.jpg)
 
 
-# 初次啟動程式
+# START
 1.npm i 
 
 2.npm start
