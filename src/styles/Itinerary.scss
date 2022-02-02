@@ -1,0 +1,30 @@
+.ItineraryContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.Itinerarytitle{
+    height: 10%;
+    padding: 20px 0 0 30px;
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+}
+
+.ItineraryContentContainer{
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    text-align: left;
+    ul{
+        list-style: none;
+        padding-left: 2%;
+    }
+    li{
+        margin-top: 5px;
+    }
+}

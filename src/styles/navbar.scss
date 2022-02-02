@@ -1,0 +1,73 @@
+//navbar
+.aboutNav{
+    width: 25%;
+    height: 100%;
+    padding:0 1.5rem;
+    .aboutNavTitle{
+        padding:4rem 0 0 0;
+        font-size: 2rem;
+        font-family: 'Comforter Brush', cursive;
+    }
+    .aboutNavSubtitle{
+        padding:1.2rem 0 0 0;
+        font-size: 1rem;
+        font-family: 'Comforter Brush', cursive;
+    }
+    .aboutNavMenu{
+        width: 100%;
+        height: 320px;
+        // list-style: none;
+        padding:4.5rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        font-family: 'Comforter Brush', cursive;
+        .aboutNavMenuUnit{
+            width: 100%;
+            position: relative;
+            font-size: 1.5rem;
+            cursor: pointer;
+            .aboutNavMenuUnitContent{
+                position: absolute;
+                z-index: 2;
+            }
+            .aboutNavMenuUnitHover{
+                width: 0%;
+                transition: 0.6s;
+            }
+            // menu hover的效果用after寫會不會比較好?
+            .aboutNavMenuUnitContent:hover+.aboutNavMenuUnitHover{
+                width: 70%;
+                height: 15px;
+                border-radius: 20px;
+                background-color: #F3E198;
+                position: absolute;
+                left: 0px;
+                top:5px;
+                z-index: 1;
+            }
+        }
+        .aboutNavMenuUnit:link, .aboutNavMenuUnit:visited{
+            color: black;
+        }
+    }
+}
+.aboutNavBorder{
+    height: 100%;
+    border-right: 1px solid black;
+    background-color: #222;
+    // 動畫
+    // height: 0%;
+    // animation-name:oxxo;
+    // animation-delay:1s;
+    // animation-duration:2s;
+    // animation-fill-mode : forwards; //設定物件狀態為動畫結束時的狀態 
+}
+// @keyframes oxxo{
+//     from{
+//         height: 0%;
+//     }
+//     to{
+//         height: 100%;
+//     }
+// }

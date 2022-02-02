@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/indexCss.scss'
 import { Link } from 'react-router-dom'
+import '../styles/navbar.scss'
 
 import navbarData from '../data/navbarData.json'
 
@@ -16,29 +17,29 @@ function NavBar() {
                 </div>
                 <div className='aboutNavMenu'>
                     <Link to="/about" className="aboutNavMenuUnit">
-                        <div className="aboutNavMenuUnitContent">登山日誌</div>
+                        <div className="aboutNavMenuUnitContent">路線與隊伍</div>
                         <div className='aboutNavMenuUnitHover'></div>
                     </Link>
-                    <Link to="/Altitude" className="aboutNavMenuUnit">
+                    <Link to="/landscape" className="aboutNavMenuUnit">
+                        <div className="aboutNavMenuUnitContent">照片分享</div>
+                        <div className='aboutNavMenuUnitHover'></div>
+                    </Link>
+                    {/* <Link to="/Altitude" className="aboutNavMenuUnit">
                         <div className="aboutNavMenuUnitContent">海拔</div>
                         <div className='aboutNavMenuUnitHover'></div>
-                    </Link>
+                    </Link> */}
                     <Link to="/Equipment" className="aboutNavMenuUnit">
                         <div className="aboutNavMenuUnitContent">裝備</div>
                         <div className='aboutNavMenuUnitHover'></div>
                     </Link>
                     <Link to ="/Itinerary" className="aboutNavMenuUnit">
-                        <div className="aboutNavMenuUnitContent">行程</div>
+                        <div className="aboutNavMenuUnitContent">行程參考</div>
                         <div className='aboutNavMenuUnitHover'></div>
                     </Link>
-                    <Link to="/landscape" className="aboutNavMenuUnit">
-                        <div className="aboutNavMenuUnitContent">風景</div>
-                        <div className='aboutNavMenuUnitHover'></div>
-                    </Link>
-                    <Link to="/Ingredients" className="aboutNavMenuUnit">
+                    {/* <Link to="/Ingredients" className="aboutNavMenuUnit">
                         <div className="aboutNavMenuUnitContent">食材</div>
                         <div className='aboutNavMenuUnitHover'></div>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             <div className='aboutNavBorder'></div>
