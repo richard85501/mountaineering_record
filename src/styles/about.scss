@@ -17,28 +17,28 @@
     .aboutIndex{
         width: 100%;
         position: absolute;
-        top:100px;
-        animation-name:moveon;
+        top:0px;
+        // animation-name:moveon;
         animation-timing-function: ease-out;
         animation-duration:1s;
         animation-fill-mode : forwards; //設定物件狀態為動畫結束時的狀態 
-        .aboutIndex_A{
-            width: 50%;
-            margin: 110px 0 0 10%;
-            font-size: 2.5rem;
-        }
-        .aboutIndex_B{
-            width: 300px;
-            margin: 80px 0 0 40%;
-            font-size: 2.5rem;
-            text-align: right;
-        }
+        // .aboutIndex_A{
+        //     width: 50%;
+        //     margin: 110px 0 0 10%;
+        //     font-size: 2.5rem;
+        // }
+        // .aboutIndex_B{
+        //     width: 300px;
+        //     margin: 80px 0 0 40%;
+        //     font-size: 2.5rem;
+        //     text-align: right;
+        // }
     }
-    @keyframes moveon {
-        from{
-            top:100vh;
-        }to{
-            top:0vh;
-        }
-    }
+    // @keyframes moveon {
+    //     from{
+    //         top:100vh;
+    //     }to{
+    //         top:0vh;
+    //     }
+    // }
 }

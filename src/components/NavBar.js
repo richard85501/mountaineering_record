@@ -10,10 +10,10 @@ function NavBar() {
         <>
             <div className='aboutNav'>
                 <div className='aboutNavTitle'>
-                    {navbarData[0].navbarTitle} 
+                    {/* {navbarData[0].navbarTitle}  */}
                 </div>
                 <div className='aboutNavSubtitle'>
-                    {navbarData[0].navbarsubtitle}
+                    {/* {navbarData[0].navbarsubtitle} */}
                 </div>
                 <div className='aboutNavMenu'>
                     <Link to="/about" className="aboutNavMenuUnit">
