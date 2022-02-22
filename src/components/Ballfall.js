@@ -154,13 +154,13 @@ function Ballfall(props) {
       Runner.run(runner, engine);
 
       var canvas = document.querySelector('canvas');
-      canvas.setAttribute('className','ballcanvas');
+      canvas.setAttribute('class','ballcanvas');
       
     }
 
     const renderText = () =>{
-      var ctx = document.getElementsByTagName("canvas")[0].getContext("2d");
-
+      var ctx = document.getElementsByClassName("ballcanvas")[0].getContext("2d");
+      console.log(ctx)
       for(var element in engine.world.bodies){
         var targetBody = engine.world.bodies[element];
         if(targetBody.render.text){
