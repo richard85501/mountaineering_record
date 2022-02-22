@@ -16,7 +16,6 @@ function EquipmentCircle() {
 
     useEffect(() => {
         let catagoryTotal;
-        console.log('effect')
         for(let i in equipmentData[0].equipment){
             catagoryTotal = 0;
             for(let y in equipmentData[0].equipment[i].details){
@@ -29,8 +28,8 @@ function EquipmentCircle() {
         for(let i in equipmentData[0].equipment){
             LabelsArray[i] = equipmentData[0].equipment[i].title
         }
-        setpiechartLabels(LabelsArray)
-        setpiechartData(DataArray)
+        setpiechartLabels(LabelsArray) //設定標籤
+        setpiechartData(DataArray) //設定數據
     }, [])
 
     console.log('effect後面')
@@ -70,13 +69,12 @@ function EquipmentCircle() {
                                 '#7b4753',
                                 '#7b6f47'
                             ],
-                            hoverOffset: 20,
+                            hoverOffset: 5,
                         }
                         
                     ]
                 }}
-                options={{ maintainAspectRatio: false }}
-                width={"70%"}
+                options={{ maintainAspectRatio: false },{}}
             />
             </div>
         </>
