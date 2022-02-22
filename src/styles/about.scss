@@ -16,12 +16,17 @@
     overflow: hidden;
     .aboutIndex{
         width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        min-height: 800px;
         position: absolute;
         top:0px;
         // animation-name:moveon;
         animation-timing-function: ease-out;
         animation-duration:1s;
         animation-fill-mode : forwards; //設定物件狀態為動畫結束時的狀態 
+        display: flex;
+        justify-content: center;
         // .aboutIndex_A{
         //     width: 50%;
         //     margin: 110px 0 0 10%;
@@ -33,6 +38,24 @@
         //     font-size: 2.5rem;
         //     text-align: right;
         // }
+        
+        .titleBlock{
+            // outline: 1px solid red;
+            width: 100%;
+            height: 100%;
+            margin-top: calc(50%-150px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // text-align: center;
+            font-size: 8rem;
+            font-family: 'Comforter Brush', cursive;
+            .aboutwordContainer{
+                width: 400px;
+                height: 150px;
+                z-index: 1;
+            }
+        }
     }
     // @keyframes moveon {
     //     from{

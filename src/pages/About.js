@@ -36,13 +36,11 @@ function About() {
             <NavBar/>
             {/* <div className='aboutNavBorder'></div> */}
             <div className='aboutContentContainer'>
-            <div className='aboutIndex'>
                 {/* <div className='aboutIndex_A'> 聖稜線</div> */}
                 {/* <button onclick={RunTheRunner()}>Run the runner</button>
                 <button onclick={StopTheRunner()}>Stop the runner</button> */}
                 {/* <div className='aboutIndex_B'> aliquam veritatis perferendis quibusdam? Magnam, totam.</div> */}
                 <Ballfall/>
-            </div>
             </div>
           </div>
         </>
