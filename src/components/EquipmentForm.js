@@ -11,7 +11,6 @@ function EquipmentForm(props) {
         let EquipmentWeightTotalNumberCount=0;//裝備重量總和
         let EquipmentQuantityCount=0;//裝備數量總和
 
-        console.log("form")
         for(let i in details){
             EquipmentWeightTotalNumberCount += details[i].weight
             EquipmentQuantityCount += details[i].number
@@ -20,7 +19,6 @@ function EquipmentForm(props) {
         setEquipmentWeightTotalNumber(EquipmentWeightTotalNumberCount)
         setEquipmentQuantity(EquipmentQuantityCount)
         a = amountofEquipmentWeight+EquipmentWeightTotalNumberCount
-        console.log('a---------',a)
         setamountOfEquipmentWeight(a);
     }, [])
 
@@ -35,7 +33,6 @@ function EquipmentForm(props) {
                     <div className='formDataItem_weight'>重量</div>
                 </div>
                 <div className='formDataItemContentContainer'>
-                {console.log('gg')}
                 {details.map((detailsEl,i)=>(
                 <EquipmentItem
                     key ={i}

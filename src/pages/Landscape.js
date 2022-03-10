@@ -32,10 +32,24 @@ function Landscape() {
       '安全抵達369山屋,回家嚕~'
 
     ]
-
     const [numOfcarousal,setNumOfcarousal] = useState(0)
+    // const [t,sett] = useState('')
+
+    // useEffect(async() => {
+    //   let test = await fetch('http://localhost:3000/test',{
+    //     method : 'GET',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       Accept: 'application/json',
+    //       }
+    //     }
+    //   ).then(res => res.json())
+    //   sett(t)
+    // }, [])
+    
 
     const constonchangeCarousal = () =>{
+      console.log('con')
       if(numOfcarousal<carousalArr.length-1){
         setNumOfcarousal(numOfcarousal+1)
       }else{

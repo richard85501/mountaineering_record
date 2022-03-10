@@ -1,4 +1,4 @@
-import React,{useEffect,useRef} from 'react'
+import React,{useCallback, useEffect,useRef} from 'react'
 
 import Matter from 'matter-js';
 
@@ -14,7 +14,9 @@ function Ballfall(props) {
     // var Engine, Render ,Runner ,Bodies ,BodyM ,Composite;
     
     var Bodies = Matter.Bodies, //創建物體
+        Render = Matter.Render,
         Composite = Matter.Composite,
+        Runner = Matter.Runner,
         BodyM = Matter.Body, //操控物體
         Events = Matter.Events
 
@@ -27,8 +29,6 @@ function Ballfall(props) {
     const init = () =>{
         // module aliases
       var Engine = Matter.Engine,
-          Render = Matter.Render,
-          Runner = Matter.Runner,
           Constraint = Matter.Constraint,
           Mouse = Matter.Mouse,
           Vertices = Matter.Vertices,
@@ -155,12 +155,14 @@ function Ballfall(props) {
 
       var canvas = document.querySelector('canvas');
       canvas.setAttribute('class','ballcanvas');
+
+      return [runner,engine]
       
     }
 
-    const renderText = () =>{
+    const renderText = useCallback(() =>{
       var ctx = document.getElementsByClassName("ballcanvas")[0].getContext("2d");
-      console.log(ctx)
+      // console.log(ctx)
       for(var element in engine.world.bodies){
         var targetBody = engine.world.bodies[element];
         if(targetBody.render.text){
@@ -179,7 +181,7 @@ function Ballfall(props) {
         }
       }
       // console.log(targetBody)
-    }
+    })
 
     const getMousePos = (event) => {
       var e = event || window.event;
@@ -190,7 +192,7 @@ function Ballfall(props) {
       return [x,y]
     }
     
-    const createBall = () =>{
+    const createBall = useCallback(() =>{
       const mousePostion = getMousePos()
       console.log(mousePostion)
       
@@ -214,14 +216,17 @@ function Ballfall(props) {
       }else{
         ballIdx = 0
       }
-      renderText()
+      // renderText()
       //球剛出現 , 會有一個奇怪的停頓 , 推斷是因為沒有初速度 , 所以這邊給他一個初速度
       BodyM.setVelocity(ball, {x:0,y:5});
       Composite.add(engine.world, [ball]);
-    }
+    })
 
     useEffect(() => {
-        init();
+          init()
+          // return (()=>{
+          //   Events.off(engine, "beforeUpdate", renderText);
+          // })
     }, [])
 
     return (

@@ -5,7 +5,7 @@ import {Pie, Doughnut, charts} from 'react-chartjs-2';
 import equipmentData from '../data/equipmentData.json'
 
 function EquipmentCircle() {
-    console.log('EquipmentCircle')
+    // console.log('EquipmentCircle')
 
     const [piechartLabels,setpiechartLabels] = useState([])
     const [piechartData,setpiechartData] = useState([])
@@ -32,11 +32,11 @@ function EquipmentCircle() {
         setpiechartData(DataArray) //設定數據
     }, [])
 
-    console.log('effect後面')
+    // console.log('effect後面')
 
     return (
         <>
-            {console.log('circleDOM')}
+            {/* {console.log('circleDOM')} */}
             <div className='piechartContainer'>
             <Doughnut
                 data={{
@@ -74,7 +74,7 @@ function EquipmentCircle() {
                         
                     ]
                 }}
-                options={{ maintainAspectRatio: false },{}}
+                options={{ maintainAspectRatio: false }}
             />
             </div>
         </>
